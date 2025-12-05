@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tastes of the Past</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Lily Leonhardt">
+
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <script>
+            (function(d) {
+                var config = {
+                kitId: 'vdb2peb',
+                scriptTimeout: 3000,
+                async: true
+                },
+                h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            })(document);
+        </script>
+
+        <!-- jquery cdn link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <!-- jquery ui -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js"></script>
+
+        <!-- smoothness -->
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- slick slider css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+        
+        <script src="script.js"></script>
+
+    </head>
+    <body>
+        <header id="landing-page">
+            <div class="nav-bar">
+                <a id="logo" href="index.html">
+                    <img src="images/logo.svg" alt="logo" width="100">
+                </a>
+                <nav>
+                    <h2 id="screen-reader">Menu</h2>
+                    <ul>
+                        <li><a href="#featured">Recipes</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <a href="#welcome">
+                <button id="explore">Explore</button>
+            </a>
+        </header>
+        <main>
+            <!-- recipes -->
+             <div id="welcome">
+                    <h2>Welcome, to Tastes of the Past!</h2>
+                    <p>This website is dedicated to sharing popular and historic Korean recipes, bridging the gap between the modern and traditional experiences of the Korean diaspora and beyond.</p>
+                    <p>While you're here, take a look around! You might find your next meal.</p>
+                </div>
+            <section id="featured">
+                <h2>Featured</h2>
+                <div class="featured-carousel">
+                    <div class="slide">
+                        <img src="images/bibimbap.jpg" alt="" height="400" width="400">
+                        <h4>Bibimbap<span lang="kr"> (비빔밥)</span></h4>
+                    </div>
+                    <div class="slide">
+                        <img src="images/bibimguksu.jpg" alt="" height="400" width="400">
+                        <h4>Bibimguksu<span lang="kr"> (비빔국수)</span></h4>
+                    </div>
+                    <div class="slide">
+                        <img src="images/jjajangmyeon.jpg" alt="" height="400" width="400">
+                        <h4>Jjajangmyeon<span lang="kr"> (짜장면)</span></h4>
+                    </div>
+                    <div class="slide">
+                        <img src="images/kimbap.jpg" alt="" height="400" width="400">
+                        <h4>Kimbap<span lang="kr"> (김밥)</span></h4>
+                    </div>
+                    <div class="slide">
+                        <img src="images/kimchi.jpg" alt="" height="400" width="400">
+                        <h4>Kimchi<span lang="kr"> (김치)</span></h4>
+                    </div>
+                </div>
+            </section>
+            <div id="recipes">
+                <h2>Recipe Catalogue</h2>
+                <div id="banchan" class="category">
+                    <h3>BANCHAN (Side Dishes)</h3>
+                    <div class="recipe-card">
+                        <h4>Kimchi</h4>
+                        <img src="images/kimchi.jpg" alt="" height="300" width="300">
+                        <button>See Recipe</button>
+                    </div>
+                    <div class="recipe-card">
+                        <h4>Kimbap</h4>
+                        <img src="images/kimbap.jpg" alt="" height="300" width="300">
+                        <button>See Recipe</button>
+                    </div>
+                    <div class="recipe-card">
+                        <h4>Oi Muchim</h4>
+                        <img src="images/oi-muchim.jpg" alt="" height="300" width="300">
+                        <button>See Recipe</button>
+                    </div>
+                    <div class="recipe-card">
+                        <h4>Gamja Jorim</h4>
+                        <img src="images/gamja-jorim.jpg" alt="" height="300" width="300">
+                        <button>See Recipe</button>
+                    </div>
+                </div>
+                <div id="main" class="category">
+                    <h3>MAIN DISHES</h3>
+                    <div class="recipe-card">
+                        <h4>Bibimbap</h4>
+                        <img src="images/bibimbap.jpg" alt="" height="300" width="300">
+                        <button>See Recipe</button>
+                    </div>
+                    <div class="recipe-card">
+                        <h4>Bibimguksu</h4>
+                        <img src="images/bibimguksu.jpg" alt="" height="300" width="300">
+                        <button>See Recipe</button>
+                    </div>
+                    <div class="recipe-card">
+                        <h4>Jjajangmyeon</h4>
+                        <img src="images/jjajangmyeon.jpg" alt="" height="300" width="300">
+                        <button>See Recipe</button>
+                    </div>
+                    <div class="recipe-card">
+                        <h4>Naengmyeon</h4>
+                        <img src="images/naengmyeon.jpg" alt="" height="300" width="300">
+                        <button>See Recipe</button>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <h3>Tastes of the Past</h3>
+            <h4>est. 2025</h4>
+        </footer>
+
+        <!-- slick slider js -->
+        <script>
+            $(document).ready(function(){
+                $('.featured-carousel').slick({
+                    slidesToShow: 3,
+                    dots: true,
+                    infinite: true,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    responsive: [
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                                slidesToShow: 2,
+                                infinite: false,
+                                dots: true
+                            }
+                        },
+                        {
+                            breakpoint: 600,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToShow: 1
+                            }
+                        }
+                    ]
+                });
+            });
+        </script>
+
+    </body>
+</html>
